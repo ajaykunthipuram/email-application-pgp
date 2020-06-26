@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 5.3//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">
+	
+<hibernate-mapping>
+	<class name="in.ajay.User" table="user">
+	<id name="id" type="int" column="id">
+	<generator class="increment" />
+	</id>
+	<property name="username" column="username" type="string"/>
+	<property name="password" column="password" type="string"/>
+	<property name="email" column="email" type="string"/>
+	</class> 
+
+
+</hibernate-mapping>
